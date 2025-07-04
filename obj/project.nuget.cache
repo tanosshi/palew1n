@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5nKTUT1dkTo=",
+  "dgSpecHash": "UrZmvXvQTHc=",
   "success": true,
   "projectFilePath": "C:\\Users\\tanos\\source\\repos\\palew1n\\palew1n\\palew1n.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tanos\\.nuget\\packages\\libusbdotnet\\3.0.167-alpha\\libusbdotnet.3.0.167-alpha.nupkg.sha512",
     "C:\\Users\\tanos\\.nuget\\packages\\microsoft.web.webview2\\1.0.2903.40\\microsoft.web.webview2.1.0.2903.40.nupkg.sha512",
     "C:\\Users\\tanos\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.26100.4188\\microsoft.windows.sdk.buildtools.10.0.26100.4188.nupkg.sha512",
     "C:\\Users\\tanos\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250606001\\microsoft.windowsappsdk.1.7.250606001.nupkg.sha512",

@@ -589,6 +589,9 @@
     <AppxPackagedFile Include="C:\Users\tanos\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tanos\.nuget\packages\libusbdotnet\3.0.167-alpha\lib\net8.0\LibUsbDotNet.dll">
+      <PackagePath>LibUsbDotNet.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tanos\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Graphics.Imaging.Projection.dll">
       <PackagePath>Microsoft.Graphics.Imaging.Projection.dll</PackagePath>
     </AppxPackagedFile>
@@ -663,6 +666,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tanos\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tanos\.nuget\packages\libusbdotnet\3.0.167-alpha\runtimes\win-x64\native\libusb-1.0.dll">
+      <PackagePath>libusb-1.0.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tanos\.nuget\packages\microsoft.web.webview2\1.0.2903.40\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>WebView2Loader.dll</PackagePath>

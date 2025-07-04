@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\tanos\source\repos\palew1n\palew1n\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-07-04T20:33:30.040</Modified>
+      <Modified>2025-07-04T21:01:02.390</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\tanos\source\repos\palew1n\palew1n\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-07-04T20:33:29.886</Modified>
+      <Modified>2025-07-04T20:57:34.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tanos\source\repos\palew1n\palew1n\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\palew1n.runtimeconfig.json">
       <PackagePath>palew1n.runtimeconfig.json</PackagePath>
-      <Modified>2025-07-04T18:42:58.617</Modified>
+      <Modified>2025-07-04T20:57:34.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tanos\source\repos\palew1n\palew1n\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\palew1n.dll">
       <PackagePath>palew1n.dll</PackagePath>
-      <Modified>2025-07-04T20:33:29.799</Modified>
+      <Modified>2025-07-04T21:01:02.137</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tanos\source\repos\palew1n\palew1n\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>palew1n.exe</PackagePath>
-      <Modified>2025-07-04T20:33:29.803</Modified>
+      <Modified>2025-07-04T21:01:02.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tanos\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.17\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -785,6 +785,10 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2024-11-11T17:23:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tanos\.nuget\packages\libusbdotnet\3.0.167-alpha\lib\net8.0\LibUsbDotNet.dll">
+      <PackagePath>LibUsbDotNet.dll</PackagePath>
+      <Modified>2025-01-17T12:32:56.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tanos\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Graphics.Imaging.Projection.dll">
       <PackagePath>Microsoft.Graphics.Imaging.Projection.dll</PackagePath>
       <Modified>2025-05-13T21:41:02.000</Modified>
@@ -885,6 +889,10 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2025-06-05T21:50:10.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tanos\.nuget\packages\libusbdotnet\3.0.167-alpha\runtimes\win-x64\native\libusb-1.0.dll">
+      <PackagePath>libusb-1.0.dll</PackagePath>
+      <Modified>2025-01-17T12:31:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tanos\.nuget\packages\microsoft.web.webview2\1.0.2903.40\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>WebView2Loader.dll</PackagePath>
       <Modified>2024-11-10T08:57:38.000</Modified>
@@ -907,7 +915,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tanos\source\repos\palew1n\palew1n\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\palew1n.deps.json">
       <PackagePath>palew1n.deps.json</PackagePath>
-      <Modified>2025-07-04T19:59:46.367</Modified>
+      <Modified>2025-07-04T20:57:33.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tanos\source\repos\palew1n\palew1n\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>

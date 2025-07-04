@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
+using Microsoft.UI;
+using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -10,19 +7,33 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
+using System.Threading.Tasks;
+using Windows.Devices.Usb;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Microsoft.UI.Windowing;
-using Microsoft.UI;
-using WinRT.Interop;
 using Windows.Graphics;
-using System.Threading.Tasks;
+using WinRT.Interop;
+using palew1n;
+using Windows.ApplicationModel;
 
 namespace palew1n
 {
     public sealed partial class MainWindow : Window
     {
         private readonly Random _random = new Random();
+
+        class MsgBoxHelper
+        {
+            [DllImport("user32.dll", CharSet = CharSet.Unicode)]
+            public static extern int MessageBox(IntPtr hWnd, string text, string caption, uint type);
+        }
 
         public MainWindow()
         {
@@ -42,6 +53,8 @@ namespace palew1n
             this.ExtendsContentIntoTitleBar = true;
             this.SetTitleBar(null);
 
+            var x = UsbHelper.ListUsbDevicesAndMaxPower();
+
             var titleBar = appWindow.TitleBar;
             titleBar.ExtendsContentIntoTitleBar = true;
             titleBar.ButtonBackgroundColor = Colors.Transparent;
@@ -49,6 +62,7 @@ namespace palew1n
             Start();
             titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
             titleBar.ButtonForegroundColor = Colors.White;
+            MsgBoxHelper.MessageBox(IntPtr.Zero, x, "box", 0);
         }
 
         private async void scan_devices()
@@ -62,6 +76,8 @@ namespace palew1n
 
             await Task.Delay(5000);
 
+            UsbHelper.ListUsbDevicesAndMaxPower();
+
             devices.RootNodes.Remove(root);
             devices.RootNodes.Add(phone);
 
@@ -72,6 +88,10 @@ namespace palew1n
 
             devices.SelectedNode = phone;
             phone.Content = phone.Content + " (EXAMPLE_QEMU_ID)";
+
+            await Task.Delay(100);
+
+            startprocess.Visibility = Visibility.Visible;
         }
 
         private async void Palen1xButton_Click(object sender, RoutedEventArgs e)

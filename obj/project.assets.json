@@ -2,6 +2,41 @@
   "version": 3,
   "targets": {
     "net8.0-windows10.0.19041": {
+      "LibUsbDotNet/3.0.167-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/LibUsbDotNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LibUsbDotNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/osx-arm64/native/libusb-1.0.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libusb-1.0.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm64/native/libusb-1.0.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libusb-1.0.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libusb-1.0.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "Microsoft.Web.WebView2/1.0.2903.40": {
         "type": "package",
         "build": {
@@ -190,6 +225,22 @@
       }
     },
     "net8.0-windows10.0.19041/win-arm64": {
+      "LibUsbDotNet/3.0.167-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/LibUsbDotNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LibUsbDotNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-arm64/native/libusb-1.0.dll": {}
+        }
+      },
       "Microsoft.Web.WebView2/1.0.2903.40": {
         "type": "package",
         "native": {
@@ -337,6 +388,22 @@
       }
     },
     "net8.0-windows10.0.19041/win-x64": {
+      "LibUsbDotNet/3.0.167-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/LibUsbDotNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LibUsbDotNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/libusb-1.0.dll": {}
+        }
+      },
       "Microsoft.Web.WebView2/1.0.2903.40": {
         "type": "package",
         "native": {
@@ -484,6 +551,22 @@
       }
     },
     "net8.0-windows10.0.19041/win-x86": {
+      "LibUsbDotNet/3.0.167-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/LibUsbDotNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LibUsbDotNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x86/native/libusb-1.0.dll": {}
+        }
+      },
       "Microsoft.Web.WebView2/1.0.2903.40": {
         "type": "package",
         "native": {
@@ -632,6 +715,28 @@
     }
   },
   "libraries": {
+    "LibUsbDotNet/3.0.167-alpha": {
+      "sha512": "d+/4iUK0FJmRY0X1bsappLiifYxVvk2Y5sBQG61tCS9gDa9b51LRkzDyrg85tBKPc22SeepmMudVlU9SfXSbgw==",
+      "type": "package",
+      "path": "libusbdotnet/3.0.167-alpha",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/LibUsbDotNet.dll",
+        "lib/net6.0/LibUsbDotNet.xml",
+        "lib/net8.0/LibUsbDotNet.dll",
+        "lib/net8.0/LibUsbDotNet.xml",
+        "lib/netstandard2.0/LibUsbDotNet.dll",
+        "lib/netstandard2.0/LibUsbDotNet.xml",
+        "libusbdotnet.3.0.167-alpha.nupkg.sha512",
+        "libusbdotnet.nuspec",
+        "runtimes/osx-arm64/native/libusb-1.0.dylib",
+        "runtimes/osx-x64/native/libusb-1.0.dylib",
+        "runtimes/win-arm64/native/libusb-1.0.dll",
+        "runtimes/win-x64/native/libusb-1.0.dll",
+        "runtimes/win-x86/native/libusb-1.0.dll"
+      ]
+    },
     "Microsoft.Web.WebView2/1.0.2903.40": {
       "sha512": "THrzYAnJgE3+cNH+9Epr44XjoZoRELdVpXlWGPs6K9C9G6TqyDfVCeVAR/Er8ljLitIUX5gaSkPsy9wRhD1sgQ==",
       "type": "package",
@@ -1505,6 +1610,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows10.0.19041": [
+      "LibUsbDotNet >= 3.0.167-alpha",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.26100.4188",
       "Microsoft.WindowsAppSDK >= 1.7.250606001"
     ]
@@ -1560,6 +1666,10 @@
       "net8.0-windows10.0.19041": {
         "targetAlias": "net8.0-windows10.0.19041.0",
         "dependencies": {
+          "LibUsbDotNet": {
+            "target": "Package",
+            "version": "[3.0.167-alpha, )"
+          },
           "Microsoft.Windows.SDK.BuildTools": {
             "target": "Package",
             "version": "[10.0.26100.4188, )"

@@ -258,3 +258,5 @@ C:\Users\tanos\source\repos\palew1n\palew1n\obj\x64\Debug\net8.0-windows10.0.190
 C:\Users\tanos\source\repos\palew1n\palew1n\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\qualifiers.txt.intermediate
 C:\Users\tanos\source\repos\palew1n\palew1n\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\tanos\source\repos\palew1n\palew1n\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ProjectArchitectures.txt
+C:\Users\tanos\source\repos\palew1n\palew1n\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\LibUsbDotNet.dll
+C:\Users\tanos\source\repos\palew1n\palew1n\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\libusb-1.0.dll
